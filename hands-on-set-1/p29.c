@@ -10,11 +10,12 @@ Date: 30th Aug, 2024.
 #include <stdlib.h>
 #include <sched.h>
 #include <unistd.h>
+
 void print_scheduler(pid_t pid){
     int policy = sched_getscheduler(pid);
     if (policy == -1) {
         perror("sched_getscheduler");
-        return 1;
+        exit(EXIT_FAILURE);
     }
     printf("Current scheduling policy ");
     if (policy == SCHED_OTHER) {
@@ -25,22 +26,32 @@ void print_scheduler(pid_t pid){
         printf("SCHED_RR\n");
     }
 }
-int main() {
+void set_scheduler(pid_t pid, int new_policy){
     struct sched_param param;
-    pid_t pid = getpid();
-    
-    print_scheduler(pid);
-
-    param.sched_priority = 1;  
-    int new_policy = SCHED_FIFO; 
+    param.sched_priority = 50;
     if (sched_setscheduler(pid, new_policy, &param) == -1) {
         perror("sched_setscheduler");
-        return 1;
+        exit(EXIT_FAILURE);
     } else {
-        printf("Scheduling policy changed successfully to FIFO.\n");
+        printf("Scheduling policy changed successfully!\n");
     }
+}
+int main() {
     
+    pid_t pid = getpid();
+    printf("pid = %d\n",pid);
     print_scheduler(pid);
+    sleep(10);
+    // setting FIFO scheduler
+    int new_policy = SCHED_FIFO; 
+    set_scheduler(pid,new_policy);
+    print_scheduler(pid);
+    sleep(10);
+    // setting RR scheduler
+    new_policy = SCHED_RR; 
+    set_scheduler(pid,new_policy);
+    print_scheduler(pid);
+    sleep(10);
     return 0;
 }
 

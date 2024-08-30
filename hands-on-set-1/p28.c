@@ -1,30 +1,29 @@
 /*
-Name: Shubh Sanjaykumar Patel
-Roll No.: MT2024148
-Problem No.: 28
-Problem statement: Write a program to get maximum and minimum real time priority.
+============================================================================
+Name : p28.c
+Author : Shubh Sanjaykumar Patel (MT2024148)
+Description : Write a program to get maximum and minimum real time priority.
+Date: 30th Aug, 2024.
+============================================================================
 */
 #include <stdio.h>
 #include <sched.h>
-
+#include <errno.h>
 int main() {
-    int maxP, minP;
-
-    maxP = sched_get_priority_max(SCHED_FIFO);
-    if (maxP == -1) {
-        perror("get_priority_max");
+    int maxPF = sched_get_priority_max(SCHED_FIFO);
+    int minPF = sched_get_priority_min(SCHED_FIFO);
+    int maxPR = sched_get_priority_max(SCHED_RR);
+    int minPR = sched_get_priority_min(SCHED_RR);
+        
+    if (maxPF == -1 || minPF == -1 || maxPR == -1 || minPR == -1) {
+        perror("get_priority error");
         return 1;
     }
 
-    minP = sched_get_priority_min(SCHED_FIFO);
-    if (minP == -1) {
-        perror("get_priority_min");
-        return 1;
-    }
-
-    printf("Realtime priorities for FIFO scheduling.\n");
-    printf("Minimum priority: %d\n", minP);
-    printf("Maximum priority: %d\n", maxP);
-
+    printf("Realtime priorities for FIFO & RR scheduling.\n");
+    printf("FIFO Minimum priority: %d\n", minPF);
+    printf("FIFO Maximum priority: %d\n", maxPF);
+    printf("RR Minimum priority: %d\n", minPR);
+    printf("RR Maximum priority: %d\n", maxPR);
     return 0;
 }

@@ -1,8 +1,10 @@
 /*
-Name: Shubh Sanjaykumar Patel
-Roll No.: MT2024148
-Problem No.: 4
-Problem statement: Write a program to open an existing file with read write mode. Try O_EXCL flag also.
+============================================================================
+Name : p4.c
+Author : Shubh Sanjaykumar Patel (MT2024148)
+Description : Write a program to open an existing file with read write mode. Try O_EXCL flag also.
+Date: 20th Aug, 2024.
+============================================================================
 */
 #include <stdio.h>
 #include <fcntl.h>

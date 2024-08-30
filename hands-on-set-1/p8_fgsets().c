@@ -1,9 +1,11 @@
 /*
-Name: Shubh Sanjaykumar Patel
-Roll No.: MT2024148
-Problem No.: 8
-Problem statement: Write a program to open a file in read only mode, read line by line and display each line as it is read.
+============================================================================
+Name : p8_fgsets().c
+Author : Shubh Sanjaykumar Patel (MT2024148)
+Description : Write a program to open a file in read only mode, read line by line and display each line as it is read.
 Close the file when end of file is reached.
+Date: 20th Aug, 2024.
+============================================================================
 */
 
 #include <stdio.h>

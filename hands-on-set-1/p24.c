@@ -1,8 +1,10 @@
 /*
-Name: Shubh Sanjaykumar Patel
-Roll No.: MT2024148
-Problem No.: 24
-Problem statement: Write a program to create an orphan process.
+============================================================================
+Name : p24.c
+Author : Shubh Sanjaykumar Patel (MT2024148)
+Description : Write a program to create an orphan process.
+Date: 26th Aug, 2024.
+============================================================================
 */
 #include <stdio.h>
 #include <unistd.h>

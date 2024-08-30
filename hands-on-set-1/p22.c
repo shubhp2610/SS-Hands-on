@@ -1,9 +1,11 @@
 /*
-Name: Shubh Sanjaykumar Patel
-Roll No.: MT2024148
-Problem No.: 22
-Problem statement: Write a program, open a file, call fork, and then write to the file by both the child as well as the
+============================================================================
+Name : p22.c
+Author : Shubh Sanjaykumar Patel (MT2024148)
+Description : Write a program, open a file, call fork, and then write to the file by both the child as well as the
 parent processes. Check output of the file.
+Date: 26th Aug, 2024.
+============================================================================
 */
 #include <stdio.h>
 #include <fcntl.h>

@@ -1,11 +1,13 @@
 /*
-Name: Shubh Sanjaykumar Patel
-Roll No.: MT2024148
-Problem No.: 17
-Problem statement: Write a program to simulate online ticket reservation. Implement write lock
-Write a program to open a file, store a ticket number and exit. Write a separate program, to
-open the file, implement write lock, read the ticket number, increment the number and print
-the new ticket number then close the file.
+============================================================================
+Name : p17_update.c
+Author : Shubh Sanjaykumar Patel (MT2024148)
+Description : Write a program to simulate online ticket reservation. Implement write lock
+              Write a program to open a file, store a ticket number and exit. Write a separate program, to
+              open the file, implement write lock, read the ticket number, increment the number and print
+              the new ticket number then close the file.
+Date: 21th Aug, 2024.
+============================================================================
 */
 // Reading and incrementing the ticket number.
 #include <stdio.h>

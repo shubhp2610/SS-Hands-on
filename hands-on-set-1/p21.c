@@ -1,9 +1,12 @@
 /*
-Name: Shubh Sanjaykumar Patel
-Roll No.: MT2024148
-Problem No.: 21
-Problem statement: Write a program, call fork and print the parent and child process id.
+============================================================================
+Name : p21.c
+Author : Shubh Sanjaykumar Patel (MT2024148)
+Description : Write a program, call fork and print the parent and child process id.
+Date: 26th Aug, 2024.
+============================================================================
 */
+
 #include <stdio.h>
 #include <unistd.h>
 void main(){

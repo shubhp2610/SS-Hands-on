@@ -1,9 +1,11 @@
 /*
-Name: Shubh Sanjaykumar Patel
-Roll No.: MT2024148
-Problem No.: 2
-Problem statement: Write a simple program to execute in an infinite loop at the background. Go to /proc directory and
+============================================================================
+Name : p2.c
+Author : Shubh Sanjaykumar Patel (MT2024148)
+Description : Write a simple program to execute in an infinite loop at the background. Go to /proc directory and
 identify all the process related information in the corresponding proc directory.
+Date: 20th Aug, 2024.
+============================================================================
 */
 #include<stdio.h>
 void main(void){

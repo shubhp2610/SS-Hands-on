@@ -1,10 +1,11 @@
 /*
-Name: Shubh Sanjaykumar Patel
-Roll No.: MT2024148
-Problem No.: 6
-Problem statement: Write a program to take input from STDIN and display on STDOUT. Use only read/write system calls.
+============================================================================
+Name : p6.c
+Author : Shubh Sanjaykumar Patel (MT2024148)
+Description : Write a program to take input from STDIN and display on STDOUT. Use only read/write system calls.
+Date: 20th Aug, 2024.
+============================================================================
 */
-
 #include<stdio.h>
 #include <unistd.h>
 void main(void){

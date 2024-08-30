@@ -1,10 +1,12 @@
 /*
-Name: Shubh Sanjaykumar Patel
-Roll No.: MT2024148
-Problem No.: 26
-Problem statement: 26. Write a program to execute an executable program.
-a. use some executable program
-b. pass some input to an executable program. (for example execute an executable of $./a.out name)
+============================================================================
+Name : p26.c
+Author : Shubh Sanjaykumar Patel (MT2024148)
+Description : Write a program to execute an executable program.
+                a. use some executable program
+                b. pass some input to an executable program. (for example execute an executable of $./a.out name)
+Date: 28th Aug, 2024.
+============================================================================
 */
 #include <stdio.h>
 #include <unistd.h>

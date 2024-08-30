@@ -1,11 +1,13 @@
 /*
-Name: Shubh Sanjaykumar Patel
-Roll No.: MT2024148
-Problem No.: 1
-Problem statement: Create the following types of a files using (i) shell command (ii) system call
-a. soft link (symlink system call)
-b. hard link (link system call)
-c. FIFO (mkfifo Library Function or mknod system call)
+============================================================================
+Name : p1.c
+Author : Shubh Sanjaykumar Patel (MT2024148)
+Description : Create the following types of a files using (i) shell command (ii) system call
+                a. soft link (symlink system call)
+                b. hard link (link system call)
+                c. FIFO (mkfifo Library Function or mknod system call)
+Date: 28th Aug, 2024.
+============================================================================
 */
 //using system call
 #include <stdio.h>

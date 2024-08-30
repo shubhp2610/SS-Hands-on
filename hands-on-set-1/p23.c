@@ -1,8 +1,10 @@
 /*
-Name: Shubh Sanjaykumar Patel
-Roll No.: MT2024148
-Problem No.: 23
-Problem statement: Write a program to create a Zombie state of the running program.
+============================================================================
+Name : p23.c
+Author : Shubh Sanjaykumar Patel (MT2024148)
+Description : Write a program to create a Zombie state of the running program.
+Date: 28th Aug, 2024.
+============================================================================
 */
 #include <stdio.h>
 #include <unistd.h>

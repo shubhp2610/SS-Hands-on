@@ -1,9 +1,11 @@
 /*
-Name: Shubh Sanjaykumar Patel
-Roll No.: MT2024148
-Problem No.: 13
-Problem statement: Write a program to wait for a STDIN for 10 seconds using select. Write a proper print statement to
+============================================================================
+Name : p13.c
+Author : Shubh Sanjaykumar Patel (MT2024148)
+Description : Write a program to wait for a STDIN for 10 seconds using select. Write a proper print statement to
 verify whether the data is available within 10 seconds or not (check in $man 2 select).
+Date: 20th Aug, 2024.
+============================================================================
 */
 #include <stdio.h>
 #include <stdlib.h>

@@ -1,12 +1,14 @@
 /*
-Name: Shubh Sanjaykumar Patel
-Roll No.: MT2024148
-Problem No.: 18
-Problem statement: Write a program to perform Record locking.
+============================================================================
+Name : p18_buyTicket.c
+Author : Shubh Sanjaykumar Patel (MT2024148)
+Description : Write a program to perform Record locking.
                     a. Implement write lock
                     b. Implement read lock
 Create three records in a file. Whenever you access a particular record, first lock it then modify/access
 to avoid race condition.
+Date: 21th Aug, 2024.
+============================================================================
 */
 #include <stdio.h>
 #include <fcntl.h>

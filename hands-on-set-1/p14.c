@@ -1,10 +1,12 @@
 /*
-Name: Shubh Sanjaykumar Patel
-Roll No.: MT2024148
-Problem No.: 14
-Problem statement: Write a program to find the type of a file.
+============================================================================
+Name : p14.c
+Author : Shubh Sanjaykumar Patel (MT2024148)
+Description : Write a program to find the type of a file.
                     a. Input should be taken from command line.
                     b. program should be able to identify any type of a file.
+Date: 21th Aug, 2024.
+============================================================================
 */
 #include <stdint.h>
 #include <stdio.h>

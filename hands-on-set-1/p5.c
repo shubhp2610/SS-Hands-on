@@ -1,9 +1,11 @@
 /*
-Name: Shubh Sanjaykumar Patel
-Roll No.: MT2024148
-Problem No.: 5
-Problem statement: Write a program to create five new files with infinite loop. Execute the program in the background
+============================================================================
+Name : p5.c
+Author : Shubh Sanjaykumar Patel (MT2024148)
+Description : Write a program to create five new files with infinite loop. Execute the program in the background
 and check the file descriptor table at /proc/pid/fd.
+Date: 20th Aug, 2024.
+============================================================================
 */
 
 #include<stdio.h>

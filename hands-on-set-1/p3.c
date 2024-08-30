@@ -1,8 +1,10 @@
 /*
-Name: Shubh Sanjaykumar Patel
-Roll No.: MT2024148
-Problem No.: 3
-Problem statement: Write a program to create a file and print the file descriptor value. Use creat ( ) system call.
+============================================================================
+Name : p3.c
+Author : Shubh Sanjaykumar Patel (MT2024148)
+Description : Write a program to create a file and print the file descriptor value. Use creat () system call.
+Date: 20th Aug, 2024.
+============================================================================
 */
 #include<stdio.h>
 #include <fcntl.h>
@@ -10,7 +12,7 @@ Problem statement: Write a program to create a file and print the file descripto
 
 void main(void){
 	const char *pathname = "newFile.txt";
-	int fd = creat(pathname, S_IRWXU);
+	int fd = creat(pathname, 0644);
 	if(fd==-1){
 		perror("Error creating file.");
 	}

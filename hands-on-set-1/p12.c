@@ -1,8 +1,10 @@
 /*
-Name: Shubh Sanjaykumar Patel
-Roll No.: MT2024148
-Problem No.: 12
-Problem statement: Write a program to find out the opening mode of a file. Use fcntl.
+============================================================================
+Name : p12.c
+Author : Shubh Sanjaykumar Patel (MT2024148)
+Description : Write a program to find out the opening mode of a file. Use fcntl.
+Date: 20th Aug, 2024.
+============================================================================
 */
 #include <stdio.h>
 #include <fcntl.h>
